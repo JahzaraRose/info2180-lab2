@@ -51,6 +51,13 @@ body {
     grid-column: 1 / 2;
 }
 
+.post-divider {
+    border: 0;
+    height: 1px;
+    background-color: #718096; 
+    margin: 20px 0;
+}
+
 .blog-post {
     margin-bottom: 20px;
 }
