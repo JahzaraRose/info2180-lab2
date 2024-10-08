@@ -14,7 +14,7 @@ body {
     grid-template-rows: auto 1fr auto;
     gap: 20px;
     min-height: 100vh;
-    padding: 0px;
+    padding: 20px;
     margin: 50px;
 }
 
