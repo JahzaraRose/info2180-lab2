@@ -13,11 +13,10 @@ body {
     grid-template-rows: auto 1fr auto;
     gap: 20px;
     min-height: 100vh;
-    padding: 10px;
-    margin: 50px;
+    margin: 50px; /* This keeps the main content centered */
 }
 
-/* Header and Footer */
+/* Header */
 .header {
     grid-column: 1 / -1;
     background-color: #63B3ED;
@@ -26,12 +25,10 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    width: 100%; /* Full width */
-    position: relative; /* Positioning to fix the overflow */
-    left: 0; /* Reset left */
-    transform: translateX(0); /* Remove translation */
+    margin: 0; /* Remove margin to flush against edges */
 }
 
+/* Header Content */
 .header-content {
     text-align: center;
     display: flex;
@@ -53,6 +50,7 @@ body {
     margin: 0;
 }
 
+/* Main Content */
 .main-content {
     grid-column: 1 / 2;
 }
@@ -90,6 +88,7 @@ body {
     width: 200px;
 }
 
+/* Sidebar */
 .sidebar {
     grid-column: 2 / 3;
     display: flex;
@@ -97,6 +96,7 @@ body {
     gap: 20px;
 }
 
+/* About Section */
 .about-section {
     background-color: #E2E8F0;
     padding: 10px;
@@ -110,23 +110,23 @@ body {
     color: #000000;
 }
 
-.social-media-section h3, .archives-section h3 {
+.social-media-section h3,
+.archives-section h3 {
     color: #48BB78;
 }
 
-.social-media-section a, .archives-section a {
+.social-media-section a,
+.archives-section a {
     color: #4299E1;
     text-decoration: none;
 }
 
+/* Footer */
 .footer {
     grid-column: 1 / -1;
     background-color: #2C5282;
     color: #FFFFFF;
     text-align: center;
     padding: 10px;
-    width: 100%; /* Full width */
-    position: relative; /* Positioning to fix the overflow */
-    left: 0; /* Reset left */
-    transform: translateX(0); /* Remove translation */
-}  
+    margin: 0; /* Remove margin to flush against edges */
+}
